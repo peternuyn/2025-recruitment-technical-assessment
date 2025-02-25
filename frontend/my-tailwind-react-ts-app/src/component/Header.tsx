@@ -12,8 +12,10 @@ const Header: React.FC = () => {
   const handleLogoClick = () => {
     setLogoSrc((prevLogoSrc) => (prevLogoSrc === logo ? closed_logo : logo));
   };
+
   return (
     <div className="navbar bg-base-100 border-b border-gray-300 w-full mb-6">
+      {/* Logo and Title Section */}
       <div className="flex-1">
         <img
           src={logoSrc}
@@ -23,6 +25,8 @@ const Header: React.FC = () => {
         />
         <h1 className="text-2xl text-orange-400 font-bold">FreeRooms</h1>
       </div>
+
+      {/* Navigation Icons Section */}
       <div className="flex-none">
         <ul className="menu menu-horizontal px-2 space-x-2">
           <li>
@@ -32,17 +36,17 @@ const Header: React.FC = () => {
           </li>
           <li>
             <button className="btn btn-square btn-outline text-orange-500 hover:text-white">
-              <img src={menu_icon} alt="Search Icon" className="h-6" />
+              <img src={menu_icon} alt="Menu Icon" className="h-6" />
             </button>
           </li>
           <li>
             <button className="btn btn-square btn-outline text-orange-500 hover:text-white">
-              <img src={map_icon} alt="Search Icon" className="h-6" />
+              <img src={map_icon} alt="Map Icon" className="h-6" />
             </button>
           </li>
           <li>
             <button className="btn btn-square btn-outline text-orange-500 hover:text-white">
-              <img src={moon_icon} alt="Search Icon" className="h-6" />
+              <img src={moon_icon} alt="Moon Icon" className="h-6" />
             </button>
           </li>
         </ul>

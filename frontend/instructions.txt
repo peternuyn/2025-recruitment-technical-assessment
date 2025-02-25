@@ -1,0 +1,14 @@
+# Instructions
+
+1. **Install Dependencies**:
+    - Open a terminal and navigate to the project directory.
+    - Run the following command to install the required dependencies:
+      ```
+      npm install
+      ```
+
+2. **Start the Development Server**:
+    -
+     ```
+      npm run dev
+      ```

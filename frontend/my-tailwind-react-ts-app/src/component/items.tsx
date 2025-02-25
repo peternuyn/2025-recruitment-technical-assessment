@@ -27,6 +27,7 @@ const Items = () => {
   return (
     <div className="container mx-auto mb-10">
       <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {/* Loop through the items array */}
         {items.map((item, index) => (
           <li
             className="card bg-base-100 w-full h-auto shadow-xl relative"
