@@ -38,6 +38,8 @@ describe("Task 2", () => {
       ];
       for (const entry of entries) {
         const resp = await putTask2(entry);
+        console.log("playing with fire", resp.status);
+        console.log(resp.body);
         expect(resp.status).toBe(200);
         expect(resp.body).toStrictEqual({});
       }
